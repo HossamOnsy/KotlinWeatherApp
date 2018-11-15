@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share_item"
+        android:icon="@drawable/ic_share"
+        android:title="share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/ic_preferences"
+        android:title="settings"
+        app:showAsAction="ifRoom"/>
+
+    <!--<item-->
+        <!--android:id="@+id/map_item"-->
+        <!--android:title="map icon"-->
+        <!--app:showAsAction="never"/>-->
+    <!--<item-->
+        <!--android:id="@+id/settings_item"-->
+        <!--android:title="settings"-->
+        <!--app:showAsAction="never"/>-->
+</menu>

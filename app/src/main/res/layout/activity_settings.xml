@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".views.SettingsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/location_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/location_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="your location"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+
+        <View
+            android:id="@+id/view_x"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbbbbb"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/location_textview" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/temp_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/location_container">
+
+        <TextView
+            android:id="@+id/temp_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Temperature Units"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp_unit_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="metric"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/temp_unit" />
+
+        <View
+            android:id="@+id/view_temp_unit"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbbbbb"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/temp_unit_textview" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/notif_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/temp_container">
+
+        <TextView
+            android:id="@+id/weather_notif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Weather Notifications"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weather_notif_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16sp"
+            android:layout_marginStart="16sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Enabled"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/weather_notif" />
+
+        <View
+            android:id="@+id/weather_notif_unit"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbbbbb"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/weather_notif_textview" />
+
+        <CheckBox
+            android:id="@+id/notification_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="@id/weather_notif_unit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

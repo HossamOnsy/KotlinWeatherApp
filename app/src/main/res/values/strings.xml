@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherFreakingApp</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="Temp">Temp</string>
+    <string name="Location">Location</string>
+    <string name="Notification">Notification</string>
+    <string name="imperial">Imperial</string>
+    <string name="metric">Metric</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+</resources>
